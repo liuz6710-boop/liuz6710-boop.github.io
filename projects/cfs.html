@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>CFS Digital Platform — Liu Xinyao</title>
+  <meta name="description" content="Technical Product Ownership of PSA's Container Freight Station digital platform: WMS + planning portal, REST API integrations, B2B customer onboarding." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700;900&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="icon" href="../favicon.svg" type="image/svg+xml" />
+  <meta property="og:type" content="article" />
+  <meta property="og:image" content="../img/me-hero.jpg" />
+  <link rel="stylesheet" href="../styles.css" />
+</head>
+<body>
+  <!-- 同一个背景视频，整页贯穿 -->
+  <div class="bg" aria-hidden="true">
+    <video class="hero-video" muted playsinline preload="auto" disablepictureinpicture>
+      <source src="../video/hero.mp4" type="video/mp4" />
+    </video>
+    <div class="bg-overlay"></div>
+  </div>
+
+  <div class="scroll-progress" id="scrollProgress"></div>
+  <div class="ring-progress" id="ringProgress" aria-hidden="true">
+    <svg viewBox="0 0 44 44">
+      <circle class="ring-track" cx="22" cy="22" r="18" />
+      <circle class="ring-fill"  cx="22" cy="22" r="18" />
+    </svg>
+    <span class="ring-pct">0%</span>
+  </div>
+
+  <header class="site-header">
+    <nav class="nav container">
+      <a href="../index.html" class="logo">LIU XINYAO <span class="logo-sub">/ TPO · SINGAPORE</span></a>
+      <ul class="nav-links">
+        <li><a href="../index.html#projects">Work</a></li>
+        <li><a href="../index.html#about">About</a></li>
+        <li><a href="../index.html#contact">Contact</a></li>
+        <li><a href="../resume.pdf" class="nav-cta" download>Resume</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="project-detail">
+    <a href="../index.html#projects" class="back-link">← All Projects</a>
+
+    <!-- ========== HERO ========== -->
+    <header class="project-hero container">
+      <p class="project-num">01 · CASE STUDY</p>
+      <h1 class="project-title">CFS Digital Platform</h1>
+      <p class="project-lead">
+        A B2B logistics platform — WMS + planning portal — for one of the
+        world's largest container freight stations. Serving Import,
+        Transshipment, and Export flows.
+      </p>
+      <ul class="project-meta">
+        <li><span class="meta-label">Role</span><span>Technical Product Owner</span></li>
+        <li><span class="meta-label">Company</span><span>PSA Corporation, Singapore</span></li>
+        <li><span class="meta-label">Timeline</span><span>Jul 2024 — Present</span></li>
+        <li><span class="meta-label">Status</span><span>Live · Scaling</span></li>
+      </ul>
+      <div class="tags">
+        <span class="tag">Product Ownership</span>
+        <span class="tag">REST / JSON APIs</span>
+        <span class="tag">EDI / XML</span>
+        <span class="tag">WMS</span>
+        <span class="tag">B2B Onboarding</span>
+        <span class="tag">Vendor Coordination</span>
+        <span class="tag">SQL Analytics</span>
+      </div>
+    </header>
+
+    <!-- ========== STATS ========== -->
+    <section class="stats container">
+      <div class="stat">
+        <p class="stat-num">~2 mo</p>
+        <p class="stat-label">Spreadsheets to first release</p>
+      </div>
+      <div class="stat">
+        <p class="stat-num">8</p>
+        <p class="stat-label">Enterprise clients delivered</p>
+      </div>
+      <div class="stat">
+        <p class="stat-num">~1,500</p>
+        <p class="stat-label">Containers / month at scale</p>
+      </div>
+      <div class="stat">
+        <p class="stat-num">S$1.5M+</p>
+        <p class="stat-label">Projected 5-year revenue</p>
+      </div>
+    </section>
+
+    <!-- ========== PROBLEM ========== -->
+    <section class="detail-section container">
+      <p class="detail-eyebrow">— THE PROBLEM</p>
+      <h2>Operations live in spreadsheets, customers live in emails.</h2>
+      <p>
+        Container Freight Stations sit between port operations and shipper /
+        consignee logistics. PSA's existing tooling was fragmented across
+        legacy systems and ad-hoc workflows — every new customer integration
+        was a one-off, every billing question was a CSV pull, and operational
+        bottlenecks only surfaced after they'd already cost the day's
+        throughput.
+      </p>
+      <p>
+        We needed a single B2B platform that could track every container
+        through Import, Transshipment, and Export flows; plan loading
+        operations; handle billing across customer types; and speak natively
+        with the rest of the port — Portnet, WMS, Chemflo — and with each
+        customer's own IT stack.
+      </p>
+    </section>
+
+    <!-- ========== ROLE ========== -->
+    <section class="detail-section container">
+      <p class="detail-eyebrow">— MY ROLE</p>
+      <h2>Technical Product Owner.</h2>
+      <p>
+        I sit between engineering, operations, customers, and vendors. On a
+        given day I'm writing a REST API contract in the morning, walking
+        a customer's IT team through an XML EDI mapping over lunch,
+        coordinating a phased go-live with three internal teams in the
+        afternoon, and debugging a billing edge case in SQL by night.
+      </p>
+      <ul class="bullet-list">
+        <li>Own the product roadmap across container tracking, load planning, and billing modules.</li>
+        <li>Coordinate <strong>5+ cross-functional teams</strong> — Operations, Finance, Customer Success, Engineering, and external integration vendors.</li>
+        <li>Author both <strong>REST / JSON API contracts</strong> and <strong>XML EDI mapping specs</strong> (file-based, batch-oriented integrations for legacy enterprise customers).</li>
+        <li>Lead end-to-end technical onboarding for new B2B customers — scope integration patterns, align data mappings, drive UAT.</li>
+        <li><strong>Drive system go-lives</strong> — orchestrate cross-team readiness, surface dependencies, prepare rollback plans, escalate when anything is at risk.</li>
+        <li><strong>Manage vendor relationships</strong> — align timelines, integration ownership, and escalation paths with external IT vendors and customer-side integrators through go-live and post-launch support.</li>
+        <li>Partner with engineers on spec reviews, code reviews, and SQL-based debugging in staging and production.</li>
+      </ul>
+    </section>
+
+    <!-- ========== INTEGRATION ========== -->
+    <section class="detail-section container">
+      <p class="detail-eyebrow">— INTEGRATION ARCHITECTURE</p>
+      <h2>Two protocols, one platform.</h2>
+      <p>
+        Most customers arrive in one of two camps. Modern API-first IT stacks
+        expect real-time JSON; legacy enterprise customers — common in port,
+        chemical, and pharmaceutical logistics — still run on XML EDI files
+        dropped on a schedule. The platform speaks both natively, and every
+        new integration starts with picking the right one.
+      </p>
+      <div class="arch-grid">
+        <div class="arch-card">
+          <h3>REST / JSON API</h3>
+          <p>For modern customer IT — real-time, webhook-driven, idempotent. Sync vs. async, polling vs. push. The right choice is the one the customer's team can actually operate at 3am.</p>
+        </div>
+        <div class="arch-card">
+          <h3>EDI (XML)</h3>
+          <p>For legacy enterprise — file-based, batch-scheduled, predictable cadence. Field-level mapping against the customer's existing EDI taxonomy; failure modes documented up front.</p>
+        </div>
+        <div class="arch-card">
+          <h3>Contract &amp; Mapping</h3>
+          <p>Schemas, error codes, retry semantics, idempotency keys, customer-field → platform-field translation. The boring documents that prevent 80% of post-launch tickets.</p>
+        </div>
+        <div class="arch-card">
+          <h3>UAT</h3>
+          <p>Test fixtures, staging walkthroughs, go-live criteria. Customers see the system work on their own data before signing off, not after.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== DELIVERY ========== -->
+    <section class="detail-section container">
+      <p class="detail-eyebrow">— DELIVERY &amp; COORDINATION</p>
+      <h2>Shipping is a team sport.</h2>
+      <p>
+        A clean API contract doesn't ship a platform. Getting from "signed
+        spec" to "live in production" is the work — and most of it is
+        people, not code.
+      </p>
+      <div class="arch-grid">
+        <div class="arch-card">
+          <h3>Cross-team go-live</h3>
+          <p>Coordinated rollout across Operations, Finance, Engineering, Customer Success, and customer IT. Surface dependencies early, decide what blocks launch, prepare a rollback plan before anyone needs it.</p>
+        </div>
+        <div class="arch-card">
+          <h3>Vendor coordination</h3>
+          <p>Align timelines, escalation paths, and integration ownership with external IT vendors and customer-side integrators. Keep the contract honest and the meeting cadence boring.</p>
+        </div>
+        <div class="arch-card">
+          <h3>Change management</h3>
+          <p>Walk operations teams through new workflows. Document what changes for whom. Make sure the people doing the work understand the system before it goes live.</p>
+        </div>
+        <div class="arch-card">
+          <h3>Post-launch support</h3>
+          <p>Runbooks, monitoring, escalation paths. The first two weeks after go-live are where most platforms either prove themselves or get rolled back.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== OUTCOMES ========== -->
+    <section class="detail-section container">
+      <p class="detail-eyebrow">— OUTCOMES</p>
+      <h2>What shipped.</h2>
+      <ul class="bullet-list">
+        <li><strong>First release in ~2 months</strong> — PSA's first digital platform for CFS operations, replacing decentralised spreadsheet workflows; later scaled to an enterprise logistics client handling <strong>~1,500 containers per month</strong>.</li>
+        <li><strong>8 enterprise clients delivered</strong>, 4 of them needing custom integrations — discovery, UAT and go-live run end to end, then training so the teams actually used the system.</li>
+        <li><strong>One reusable billing framework</strong> replacing per-client pricing logic — <strong>~3 staff-hours/day per client</strong> of manual invoice preparation removed and <strong>billing errors down ~20%</strong>.</li>
+        <li><strong>A core data model that holds up</strong> — tracking inventory below the customer-order level so partial processing and returns stay accurate in both stock and charges.</li>
+        <li><strong>A silent data bug caught before anyone noticed</strong> — traced a cross-system sync failure orphaning ~100 records to a non-atomic delete-then-create API pattern, then designed the compensating rollback that stopped it recurring.</li>
+        <li><strong>Smart picking algorithm</strong> for pharmaceutical clients across Singapore medical centers — <strong>70% picking efficiency improvement</strong>. <a href="smart-picking.html" class="inline-link">See case study →</a></li>
+        <li><strong>S$1.5M+ projected 5-year revenue</strong> — sized from merchant behaviour analysis and presented to leadership, which won the initiative its slot against competing projects.</li>
+        <li><strong>KPI dashboards</strong> for platform adoption, transaction volume, and operational throughput — bottlenecks that used to surface in post-mortems now surface in the backlog.</li>
+      </ul>
+    </section>
+
+    <!-- ========== STACK ========== -->
+    <section class="detail-section container">
+      <p class="detail-eyebrow">— STACK</p>
+      <h2>What I work in.</h2>
+      <ul class="skill-list stack-grid">
+        <li>REST / JSON APIs</li>
+        <li>XML EDI</li>
+        <li>Webhook + Polling</li>
+        <li>File-based integration</li>
+        <li>SQL (intermediate)</li>
+        <li>Python (pandas)</li>
+        <li>Power BI</li>
+        <li>Figma</li>
+        <li>Jira / Confluence</li>
+        <li>Portnet</li>
+        <li>Chemflo</li>
+        <li>WMS</li>
+      </ul>
+    </section>
+
+    <!-- ========== Bottom nav ========== -->
+    <nav class="project-nav container">
+      <a href="../index.html#projects" class="btn btn-ghost">← All Projects</a>
+      <a href="smart-picking.html" class="btn btn-primary">Next: Smart Picking →</a>
+    </nav>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p class="footer-eyebrow">— LET'S TALK</p>
+      <h2 class="footer-title">liuz6710<span class="accent-text">@gmail.com</span></h2>
+      <div class="social-icons">
+        <a href="mailto:liuz6710@gmail.com" aria-label="Email">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3 7l9 6 9-6"/></svg>
+        </a>
+        <a href="https://github.com/liuz6710-boop" target="_blank" rel="noopener" aria-label="GitHub">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 .5C5.65.5.5 5.65.5 12c0 5.08 3.29 9.39 7.86 10.91.58.11.79-.25.79-.55 0-.27-.01-.99-.02-1.95-3.2.69-3.88-1.54-3.88-1.54-.52-1.33-1.27-1.69-1.27-1.69-1.04-.71.08-.7.08-.7 1.15.08 1.76 1.18 1.76 1.18 1.02 1.76 2.69 1.25 3.35.96.1-.74.4-1.25.72-1.54-2.55-.29-5.24-1.28-5.24-5.69 0-1.26.45-2.28 1.18-3.09-.12-.29-.51-1.46.11-3.04 0 0 .97-.31 3.18 1.18a11 11 0 015.8 0c2.21-1.49 3.18-1.18 3.18-1.18.63 1.58.23 2.75.11 3.04.74.81 1.18 1.83 1.18 3.09 0 4.42-2.69 5.4-5.26 5.69.41.36.78 1.06.78 2.14 0 1.55-.01 2.8-.01 3.18 0 .31.21.67.8.55C20.21 21.38 23.5 17.08 23.5 12 23.5 5.65 18.35.5 12 .5z"/></svg>
+        </a>
+      </div>
+      <p class="footer-text">Liu Xinyao · <span id="year"></span> · Built with HTML/CSS/JS</p>
+    </div>
+  </footer>
+
+  <script src="../script.js"></script>
+</body>
+</html>

@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sustainable Investments Simulation — Liu Xinyao</title>
+  <meta name="description" content="Gamified ESG investment simulation built for the Goldman Sachs Engineering Engage Hackathon — Top 4 in Singapore." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700;900&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="icon" href="../favicon.svg" type="image/svg+xml" />
+  <meta property="og:type" content="article" />
+  <meta property="og:image" content="../img/me-hero.jpg" />
+  <link rel="stylesheet" href="../styles.css" />
+</head>
+<body>
+  <div class="bg" aria-hidden="true">
+    <video class="hero-video" muted playsinline preload="auto" disablepictureinpicture>
+      <source src="../video/hero.mp4" type="video/mp4" />
+    </video>
+    <div class="bg-overlay"></div>
+  </div>
+
+  <div class="scroll-progress" id="scrollProgress"></div>
+  <div class="ring-progress" id="ringProgress" aria-hidden="true">
+    <svg viewBox="0 0 44 44">
+      <circle class="ring-track" cx="22" cy="22" r="18" />
+      <circle class="ring-fill"  cx="22" cy="22" r="18" />
+    </svg>
+    <span class="ring-pct">0%</span>
+  </div>
+
+  <header class="site-header">
+    <nav class="nav container">
+      <a href="../index.html" class="logo">LIU XINYAO <span class="logo-sub">/ TPO · SINGAPORE</span></a>
+      <ul class="nav-links">
+        <li><a href="../index.html#projects">Work</a></li>
+        <li><a href="../index.html#about">About</a></li>
+        <li><a href="../index.html#contact">Contact</a></li>
+        <li><a href="../resume.pdf" class="nav-cta" download>Resume</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="project-detail">
+    <a href="../index.html#projects" class="back-link">← All Projects</a>
+
+    <!-- ========== HERO ========== -->
+    <header class="project-hero container">
+      <p class="project-num">04 · CASE STUDY</p>
+      <h1 class="project-title">Sustainable Investments Simulation</h1>
+      <p class="project-lead">
+        A gamified ESG investment simulation built for the Goldman Sachs
+        Engineering Engage Hackathon — teaching first-time investors to
+        weigh sustainability against returns, with simulated market data
+        as the teacher.
+      </p>
+      <ul class="project-meta">
+        <li><span class="meta-label">Role</span><span>Product Strategy &amp; UX Lead</span></li>
+        <li><span class="meta-label">Event</span><span>GS Engineering Engage Hackathon</span></li>
+        <li><span class="meta-label">Timeline</span><span>Dec 2021 — May 2022</span></li>
+        <li><span class="meta-label">Result</span><span>Top 4 in Singapore</span></li>
+      </ul>
+      <div class="tags">
+        <span class="tag">Product Strategy</span>
+        <span class="tag">UX Design</span>
+        <span class="tag">ESG</span>
+        <span class="tag">Data Modeling</span>
+        <span class="tag">Gamification</span>
+      </div>
+    </header>
+
+    <!-- ========== STATS ========== -->
+    <section class="stats container">
+      <div class="stat">
+        <p class="stat-num">Top 4</p>
+        <p class="stat-label">Singapore finalists</p>
+      </div>
+      <div class="stat">
+        <p class="stat-num">5 mo</p>
+        <p class="stat-label">Concept → working prototype</p>
+      </div>
+      <div class="stat">
+        <p class="stat-num">Simulated</p>
+        <p class="stat-label">Market data for validation</p>
+      </div>
+      <div class="stat">
+        <p class="stat-num">ESG</p>
+        <p class="stat-label">First-time investor audience</p>
+      </div>
+    </section>
+
+    <!-- ========== PROBLEM ========== -->
+    <section class="detail-section container">
+      <p class="detail-eyebrow">— THE PROBLEM</p>
+      <h2>ESG sounds virtuous. Most beginners don't know what it costs.</h2>
+      <p>
+        Sustainable investing is increasingly the default story we tell
+        new investors — but the trade-offs (long horizons, fund selection,
+        sector exclusions, return variance) rarely make it into the
+        narrative. The result: people opt in to ESG without understanding
+        what they're opting out of.
+      </p>
+      <p>
+        We wanted to build something that put the trade-offs in the
+        learner's hands — let them make portfolio choices, see simulated
+        consequences over time, and feel the shape of ESG investing rather
+        than read about it.
+      </p>
+    </section>
+
+    <!-- ========== ROLE ========== -->
+    <section class="detail-section container">
+      <p class="detail-eyebrow">— MY ROLE</p>
+      <h2>Product strategy and UX, end to end.</h2>
+      <ul class="bullet-list">
+        <li>Defined the product vision: an interactive simulation, not a course or a quiz.</li>
+        <li>Designed the core game loop — pick a portfolio, advance the market clock, see outcomes, iterate.</li>
+        <li>Built the data model for investment scenarios: asset classes, ESG ratings, market events, volatility ranges.</li>
+        <li>Drove UX design across onboarding, portfolio building, simulation playback, and reflection.</li>
+        <li>Validated product-market fit using simulated market data and playtests with first-time investor personas.</li>
+      </ul>
+    </section>
+
+    <!-- ========== APPROACH ========== -->
+    <section class="detail-section container">
+      <p class="detail-eyebrow">— APPROACH</p>
+      <h2>Four moves, four feelings.</h2>
+      <div class="arch-grid">
+        <div class="arch-card">
+          <h3>Onboard</h3>
+          <p>Strip the financial jargon. Anchor the player with a story and a starting bankroll.</p>
+        </div>
+        <div class="arch-card">
+          <h3>Choose</h3>
+          <p>Portfolio building with ESG-tagged assets. Visual contrast between sustainable and conventional choices, without moralizing.</p>
+        </div>
+        <div class="arch-card">
+          <h3>Simulate</h3>
+          <p>Time advances. Markets move based on the data model. Players watch their portfolio's value (and ESG impact) shift.</p>
+        </div>
+        <div class="arch-card">
+          <h3>Reflect</h3>
+          <p>Post-round breakdown: what worked, what didn't, what ESG choices cost or earned. Then play again with better intuition.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== OUTCOMES ========== -->
+    <section class="detail-section container">
+      <p class="detail-eyebrow">— OUTCOMES</p>
+      <h2>Recognition and lessons.</h2>
+      <ul class="bullet-list">
+        <li><strong>Top 4 in Singapore</strong> at the Goldman Sachs Engineering Engage Hackathon — recognized for product strategy and execution.</li>
+        <li><strong>A working simulation</strong> that put ESG trade-offs in a learner's hands, not a textbook.</li>
+        <li><strong>Validated approach</strong> — simulated market data was enough to demonstrate PMF without needing live financial integrations.</li>
+        <li><strong>First taste of product leadership</strong> — defining the why, the what, and the feel of a product end-to-end while still in undergrad.</li>
+      </ul>
+    </section>
+
+    <!-- ========== STACK ========== -->
+    <section class="detail-section container">
+      <p class="detail-eyebrow">— STACK</p>
+      <h2>What I worked in.</h2>
+      <ul class="skill-list stack-grid">
+        <li>Product strategy</li>
+        <li>UX design</li>
+        <li>Game-loop design</li>
+        <li>Data modeling</li>
+        <li>Figma</li>
+        <li>Simulated market data</li>
+        <li>Playtesting</li>
+        <li>Cross-functional teamwork</li>
+      </ul>
+    </section>
+
+    <nav class="project-nav container">
+      <a href="robotics.html" class="btn btn-ghost">← Robotics Dashboard</a>
+      <a href="rolescout.html" class="btn btn-primary">Next: RoleScout →</a>
+    </nav>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p class="footer-eyebrow">— LET'S TALK</p>
+      <h2 class="footer-title">liuz6710<span class="accent-text">@gmail.com</span></h2>
+      <div class="social-icons">
+        <a href="mailto:liuz6710@gmail.com" aria-label="Email">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3 7l9 6 9-6"/></svg>
+        </a>
+        <a href="https://github.com/liuz6710-boop" target="_blank" rel="noopener" aria-label="GitHub">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 .5C5.65.5.5 5.65.5 12c0 5.08 3.29 9.39 7.86 10.91.58.11.79-.25.79-.55 0-.27-.01-.99-.02-1.95-3.2.69-3.88-1.54-3.88-1.54-.52-1.33-1.27-1.69-1.27-1.69-1.04-.71.08-.7.08-.7 1.15.08 1.76 1.18 1.76 1.18 1.02 1.76 2.69 1.25 3.35.96.1-.74.4-1.25.72-1.54-2.55-.29-5.24-1.28-5.24-5.69 0-1.26.45-2.28 1.18-3.09-.12-.29-.51-1.46.11-3.04 0 0 .97-.31 3.18 1.18a11 11 0 015.8 0c2.21-1.49 3.18-1.18 3.18-1.18.63 1.58.23 2.75.11 3.04.74.81 1.18 1.83 1.18 3.09 0 4.42-2.69 5.4-5.26 5.69.41.36.78 1.06.78 2.14 0 1.55-.01 2.8-.01 3.18 0 .31.21.67.8.55C20.21 21.38 23.5 17.08 23.5 12 23.5 5.65 18.35.5 12 .5z"/></svg>
+        </a>
+      </div>
+      <p class="footer-text">Liu Xinyao · <span id="year"></span> · Built with HTML/CSS/JS</p>
+    </div>
+  </footer>
+
+  <script src="../script.js"></script>
+</body>
+</html>

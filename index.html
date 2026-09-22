@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Liu Xinyao — Technical Product Owner</title>
+  <meta name="description" content="Liu Xinyao — Technical Product Owner at PSA Corporation. NTU EEE First Class Honours. Portfolio of B2B logistics, data, and product work." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700;900&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="icon" href="favicon.svg" type="image/svg+xml" />
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Liu Xinyao — Technical Product Owner" />
+  <meta property="og:description" content="B2B logistics platforms, system integration and applied AI. Technical Product Owner at PSA Singapore. NTU EEE First Class Honours." />
+  <meta property="og:image" content="img/me-hero.jpg" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <link rel="stylesheet" href="styles.css" />
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Liu Xinyao",
+    "jobTitle": "Technical Product Owner",
+    "worksFor": { "@type": "Organization", "name": "PSA Corporation" },
+    "alumniOf": { "@type": "CollegeOrUniversity", "name": "Nanyang Technological University" },
+    "address": { "@type": "PostalAddress", "addressLocality": "Singapore" },
+    "email": "mailto:liuz6710@gmail.com",
+    "knowsAbout": ["Product Management", "System Integration", "B2B Logistics", "SQL", "Applied AI"],
+    "sameAs": ["https://github.com/liuz6710-boop"]
+  }
+  </script>
+</head>
+<body>
+  <!-- 全屏背景视频（fixed），贯穿整页。currentTime 由整页滚动百分比驱动 -->
+  <div class="bg" aria-hidden="true">
+    <video class="hero-video" muted playsinline preload="auto" disablepictureinpicture>
+      <source src="video/hero.mp4" type="video/mp4" />
+    </video>
+    <div class="bg-overlay"></div>
+  </div>
+
+  <!-- 顶部滚动进度条 -->
+  <div class="scroll-progress" id="scrollProgress"></div>
+
+  <!-- 右下角环形滚动指示器 -->
+  <div class="ring-progress" id="ringProgress" aria-hidden="true">
+    <svg viewBox="0 0 44 44">
+      <circle class="ring-track" cx="22" cy="22" r="18" />
+      <circle class="ring-fill"  cx="22" cy="22" r="18" />
+    </svg>
+    <span class="ring-pct">0%</span>
+  </div>
+
+  <header class="site-header">
+    <nav class="nav container">
+      <a href="#home" class="logo">LIU XINYAO <span class="logo-sub">/ TPO · SINGAPORE</span></a>
+      <ul class="nav-links">
+        <li><a href="#projects">Work</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li><a href="resume.pdf" class="nav-cta" download>Resume</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <!-- ============ HERO ============ -->
+    <!-- 视频不在 hero 里了 —— 在 body 顶部的 .bg 里，整页都看得见 -->
+    <section id="home" class="hero">
+      <div class="hero-content container">
+        <div class="hero-text">
+          <p class="role">TECHNICAL PRODUCT OWNER · PSA SINGAPORE</p>
+          <h1>By day, I build B2B systems<br />and integrations.<br /><span class="accent-text">By night, I explore how AI<br />can make work smarter.</span></h1>
+          <p class="intro">
+            I turn operational chaos at one of the world's largest ports into
+            clean APIs, picking algorithms, and product roadmaps that actually
+            move containers.
+          </p>
+          <div class="hero-actions">
+            <a href="#projects" class="btn btn-primary">View Work →</a>
+            <a href="#contact" class="btn btn-ghost">Contact</a>
+          </div>
+        </div>
+
+        <!-- WANG-13 风格的个人 ID 卡片 -->
+        <aside class="id-card">
+          <div class="id-card-top">
+            <span>LIU—24</span>
+            <span class="id-dot"></span>
+          </div>
+          <div class="id-card-photo">
+            <img src="img/me-hero.jpg" alt="Liu Xinyao" />
+          </div>
+          <div class="id-card-body">
+            <p class="id-name">LIU XINYAO</p>
+            <p class="id-meta">NTU EEE · First Class Honours</p>
+            <p class="id-meta">CGPA 4.50 / 5.00</p>
+            <div class="id-barcode">|| ||| | ||  || ||| |</div>
+          </div>
+        </aside>
+      </div>
+
+      <div class="scroll-hint">SCROLL ↓</div>
+    </section>
+
+    <!-- ============ Chapter title ============ -->
+    <section class="chapter container">
+      <p class="chapter-eyebrow">CHAPTER 01 · WORK</p>
+      <h2 class="chapter-title">SHIP.</h2>
+      <p class="chapter-sub">
+        Built platforms that listened. Built integrations that didn't break.
+      </p>
+    </section>
+
+    <!-- ============ PROJECTS ============ -->
+    <section id="projects" class="section container">
+      <article class="project-card spring">
+        <div class="project-text">
+          <p class="project-num">01</p>
+          <h3>CFS Digital Platform — PSA</h3>
+          <p>
+            PSA's first digital platform for Container Freight Station
+            operations — spreadsheets to a live system in
+            <strong>~2 months</strong>, then scaled to an enterprise logistics
+            client moving <strong>~1,500 containers a month</strong>. I own the
+            roadmap, write the REST API and XML EDI specs, and take each
+            customer from discovery to go-live. <strong>8 enterprise
+            clients</strong> delivered, 4 needing custom integrations.
+          </p>
+          <div class="tags">
+            <span class="tag">Product</span>
+            <span class="tag">REST API</span>
+            <span class="tag">EDI / XML</span>
+            <span class="tag">Vendor Coordination</span>
+            <span class="tag">WMS</span>
+          </div>
+          <a href="projects/cfs.html" class="view-link">View Project →</a>
+        </div>
+        <div class="project-image image-cfs">
+          <img src="img/projects/cfs.jpg" alt="Container ship at port at night" />
+          <span class="project-label">CFS</span>
+        </div>
+      </article>
+
+      <article class="project-card spring reverse">
+        <div class="project-image image-pick">
+          <img src="img/projects/smart-picking.jpg" alt="Dim warehouse aisle with tall shelves" />
+          <span class="project-label">Smart Picking</span>
+        </div>
+        <div class="project-text">
+          <p class="project-num">02</p>
+          <h3>Smart Picking Algorithm</h3>
+          <p>
+            Defined problem space and constraints for an optimized pick-list
+            algorithm (product, warehouse location, pick path). Co-designed
+            with engineering, improving picking efficiency by
+            <strong>70%</strong> for pharmaceutical clients across Singapore
+            medical centers.
+          </p>
+          <div class="tags">
+            <span class="tag">Optimization</span>
+            <span class="tag">Pharma Logistics</span>
+          </div>
+          <a href="projects/smart-picking.html" class="view-link">View Project →</a>
+        </div>
+      </article>
+
+      <article class="project-card spring">
+        <div class="project-text">
+          <p class="project-num">03</p>
+          <h3>Mobile Robotics Dashboard — Schaeffler</h3>
+          <p>
+            Designed a real-time monitoring dashboard with 2D viz and 3D
+            point-cloud rendering, improving observability for mobile robot
+            fleets. Built a Web UI generation toolset that turns design mockups
+            into reusable components wired to pre-built backend services.
+          </p>
+          <div class="tags">
+            <span class="tag">Dashboard</span>
+            <span class="tag">3D Viz</span>
+            <span class="tag">Tooling</span>
+          </div>
+          <a href="projects/robotics.html" class="view-link">View Project →</a>
+        </div>
+        <div class="project-image image-robot">
+          <img src="img/projects/robotics.jpg" alt="Mobile robot in a room with 3D point cloud visualization" />
+          <span class="project-label">Robotics</span>
+        </div>
+      </article>
+
+      <article class="project-card spring reverse">
+        <div class="project-image image-gs">
+          <img src="img/projects/esg-sim.jpg" alt="Sun rays piercing through pine forest" />
+          <span class="project-label">ESG Sim</span>
+        </div>
+        <div class="project-text">
+          <p class="project-num">04</p>
+          <h3>Sustainable Investments Simulation</h3>
+          <p>
+            Led product strategy and UX design for a gamified ESG investment
+            simulation; defined the investment scenarios and validated the
+            concept with simulated market data. <strong>Top 4 in
+            Singapore</strong> at the Goldman Sachs Engineering Engage
+            Hackathon.
+          </p>
+          <div class="tags">
+            <span class="tag">Product Design</span>
+            <span class="tag">ESG</span>
+            <span class="tag">Hackathon</span>
+          </div>
+          <a href="projects/esg-sim.html" class="view-link">View Project →</a>
+        </div>
+      </article>
+
+      <article class="project-card spring">
+        <div class="project-text">
+          <p class="project-num">05</p>
+          <h3>RoleScout — Résumé-Driven Job Matching</h3>
+          <p>
+            A job search is a filtering problem, so I built the filter. Python
+            pipeline pulling <strong>~4,000 postings from 10 job board and ATS
+            APIs</strong> into SQLite, ranked by embedding similarity against
+            my own résumé and scored by an LLM — with an
+            <strong>evaluation harness</strong> (precision@k / NDCG@k) that
+            fails the run when ranking quality drops.
+          </p>
+          <div class="tags">
+            <span class="tag">Python</span>
+            <span class="tag">LLM Scoring</span>
+            <span class="tag">Semantic Retrieval</span>
+            <span class="tag">Evaluation</span>
+            <span class="tag">Observability</span>
+          </div>
+          <a href="projects/rolescout.html" class="view-link">View Project →</a>
+        </div>
+        <div class="project-image image-rolescout">
+          <img src="img/projects/rolescout.svg" alt="RoleScout pipeline: ten job sources feeding an eligibility gate, embedding ranking and LLM fit scoring, with a human feedback loop" />
+          <span class="project-label">RoleScout</span>
+        </div>
+      </article>
+    </section>
+
+    <!-- ============ Chapter 2 ============ -->
+    <section class="chapter container">
+      <p class="chapter-eyebrow">CHAPTER 02 · ABOUT</p>
+      <h2 class="chapter-title">BUILD.</h2>
+      <p class="chapter-sub">
+        A studio of one — between engineering and product.
+      </p>
+    </section>
+
+    <!-- ============ ABOUT ============ -->
+    <section id="about" class="section container">
+      <div class="about-grid">
+        <div class="about-text spring">
+          <p>
+            I'm Liu Xinyao — a Technical Product Owner at PSA Corporation in
+            Singapore, working on a B2B logistics platform for Container
+            Freight Station operations.
+          </p>
+          <p>
+            I graduated from <strong>NTU</strong> with First Class Honours in
+            Electrical &amp; Electronic Engineering (Info-Comms / Data
+            Intelligence Processing), CGPA 4.50/5.00, on an
+            <strong>MOE Full Scholarship</strong>. I sit between engineering
+            and product — writing API contracts, reading SQL, running UAT,
+            and translating operational reality into roadmaps.
+          </p>
+          <p>
+            Outside work I build things to answer my own questions. The most
+            recent is <a href="projects/rolescout.html" class="inline-link">RoleScout</a>,
+            a résumé-driven job matching pipeline with an evaluation harness and
+            run-health monitoring — the parts of applied AI that nobody demos.
+          </p>
+          <p class="skill-heading">STACK</p>
+          <ul class="skill-list">
+            <li>Product Management</li>
+            <li>REST / JSON APIs</li>
+            <li>EDI / SFTP</li>
+            <li>System Integration</li>
+            <li>Advanced SQL</li>
+            <li>Python</li>
+            <li>LLM Applications</li>
+            <li>Evaluation &amp; Metrics</li>
+            <li>Power BI</li>
+            <li>Figma</li>
+            <li>Jira / Confluence</li>
+            <li>Agile Delivery</li>
+          </ul>
+          <a href="resume.pdf" class="btn btn-primary resume-btn" download>Download Resume</a>
+        </div>
+        <div class="about-photo spring">
+          <div class="photo-circle">
+            <img src="img/me-about.jpg" alt="Liu Xinyao" class="circle-img" />
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ============ FOOTER ============ -->
+  <footer id="contact" class="site-footer">
+    <div class="container">
+      <p class="footer-eyebrow">— LET'S TALK</p>
+      <h2 class="footer-title">liuz6710<span class="accent-text">@gmail.com</span></h2>
+      <div class="social-icons">
+        <a href="mailto:liuz6710@gmail.com" aria-label="Email">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3 7l9 6 9-6"/></svg>
+        </a>
+        <a href="https://github.com/liuz6710-boop" target="_blank" rel="noopener" aria-label="GitHub">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 .5C5.65.5.5 5.65.5 12c0 5.08 3.29 9.39 7.86 10.91.58.11.79-.25.79-.55 0-.27-.01-.99-.02-1.95-3.2.69-3.88-1.54-3.88-1.54-.52-1.33-1.27-1.69-1.27-1.69-1.04-.71.08-.7.08-.7 1.15.08 1.76 1.18 1.76 1.18 1.02 1.76 2.69 1.25 3.35.96.1-.74.4-1.25.72-1.54-2.55-.29-5.24-1.28-5.24-5.69 0-1.26.45-2.28 1.18-3.09-.12-.29-.51-1.46.11-3.04 0 0 .97-.31 3.18 1.18a11 11 0 015.8 0c2.21-1.49 3.18-1.18 3.18-1.18.63 1.58.23 2.75.11 3.04.74.81 1.18 1.83 1.18 3.09 0 4.42-2.69 5.4-5.26 5.69.41.36.78 1.06.78 2.14 0 1.55-.01 2.8-.01 3.18 0 .31.21.67.8.55C20.21 21.38 23.5 17.08 23.5 12 23.5 5.65 18.35.5 12 .5z"/></svg>
+        </a>
+      </div>
+      <p class="footer-text">Liu Xinyao · <span id="year"></span> · Built with HTML/CSS/JS</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,71 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 800" width="1200" height="800" role="img" aria-label="RoleScout pipeline diagram">
+  <defs>
+    <linearGradient id="bgGrad" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#101014"/>
+      <stop offset="100%" stop-color="#1b1b22"/>
+    </linearGradient>
+    <linearGradient id="flow" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#f5c842" stop-opacity="0.15"/>
+      <stop offset="100%" stop-color="#f5c842" stop-opacity="0.65"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="800" fill="url(#bgGrad)"/>
+  <g stroke="rgba(255,255,255,0.045)" stroke-width="1">
+    <path d="M0 200H1200M0 400H1200M0 600H1200M300 0V800M600 0V800M900 0V800"/>
+  </g>
+
+  <!-- sources column -->
+  <g font-family="Inter, system-ui, sans-serif" font-size="19" fill="#9a958c">
+    <text x="90" y="205">Greenhouse</text>
+    <text x="90" y="258">Lever</text>
+    <text x="90" y="311">Ashby</text>
+    <text x="90" y="364">Workday</text>
+    <text x="90" y="417">SmartRecruiters</text>
+    <text x="90" y="470">MyCareersFuture</text>
+    <text x="90" y="523">JSearch</text>
+    <text x="90" y="576">+ 3 more</text>
+  </g>
+  <g stroke="url(#flow)" stroke-width="2" fill="none">
+    <path d="M280 198 C 360 198, 380 380, 452 380"/>
+    <path d="M280 251 C 360 251, 380 380, 452 380"/>
+    <path d="M280 304 C 360 304, 380 380, 452 380"/>
+    <path d="M280 357 C 380 357, 400 380, 452 380"/>
+    <path d="M280 410 C 380 410, 400 380, 452 380"/>
+    <path d="M280 463 C 360 463, 380 380, 452 380"/>
+    <path d="M280 516 C 360 516, 380 380, 452 380"/>
+    <path d="M280 569 C 360 569, 380 380, 452 380"/>
+  </g>
+
+  <!-- stages -->
+  <g font-family="Inter, system-ui, sans-serif">
+    <rect x="452" y="330" width="190" height="100" rx="12" fill="#15151a" stroke="rgba(245,200,66,0.35)"/>
+    <text x="547" y="368" font-size="21" fill="#f5f3ee" text-anchor="middle">Eligibility</text>
+    <text x="547" y="396" font-size="15" fill="#9a958c" text-anchor="middle">SG · full-time</text>
+
+    <path d="M642 380H712" stroke="#f5c842" stroke-width="2" stroke-opacity="0.6"/>
+    <path d="M700 372l14 8-14 8z" fill="#f5c842" fill-opacity="0.8"/>
+
+    <rect x="712" y="330" width="190" height="100" rx="12" fill="#15151a" stroke="rgba(245,200,66,0.35)"/>
+    <text x="807" y="368" font-size="21" fill="#f5f3ee" text-anchor="middle">Embeddings</text>
+    <text x="807" y="396" font-size="15" fill="#9a958c" text-anchor="middle">résumé-driven rank</text>
+
+    <path d="M902 380H972" stroke="#f5c842" stroke-width="2" stroke-opacity="0.6"/>
+    <path d="M960 372l14 8-14 8z" fill="#f5c842" fill-opacity="0.8"/>
+
+    <rect x="972" y="330" width="150" height="100" rx="12" fill="#f5c842"/>
+    <text x="1047" y="368" font-size="21" fill="#0b0b0c" text-anchor="middle" font-weight="600">LLM</text>
+    <text x="1047" y="396" font-size="15" fill="rgba(11,11,12,0.7)" text-anchor="middle">fit score</text>
+  </g>
+
+  <!-- feedback loop -->
+  <g fill="none" stroke="#f5c842" stroke-opacity="0.45" stroke-width="2" stroke-dasharray="7 7">
+    <path d="M1047 440 C 1047 560, 700 600, 547 520 C 480 485, 470 450, 470 434"/>
+  </g>
+  <text x="760" y="600" font-family="Inter, system-ui, sans-serif" font-size="16" fill="#9a958c" text-anchor="middle">human ratings → calibration anchors</text>
+
+  <!-- caption -->
+  <g font-family="Inter, system-ui, sans-serif">
+    <text x="90" y="110" font-size="15" fill="#f5c842" letter-spacing="3">ROLESCOUT · PIPELINE</text>
+    <text x="90" y="700" font-size="16" fill="#9a958c">~4,000 postings · 10 sources · 76 tests · precision@k / NDCG@k gate</text>
+  </g>
+</svg>
