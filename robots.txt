@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://liuz6710-boop.github.io/sitemap.xml
+Sitemap: https://liuz6710-boop.github.io/personal-website/sitemap.xml
