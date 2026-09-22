@@ -1144,3 +1144,15 @@ body {
 .earlier-body h3 { font-family: "Playfair Display", serif; font-size: 22px; margin: 0 0 4px; }
 .earlier-meta { font-size: 12px; letter-spacing: 1px; color: var(--accent); margin: 0 0 12px; text-transform: uppercase; }
 .earlier-body p { font-size: 14px; color: var(--text-muted); line-height: 1.7; margin: 0 0 14px; }
+
+/* ---------- hero capability strip ---------- */
+.capability-strip {
+  margin: 26px 0 0;
+  padding-top: 18px;
+  border-top: 1px solid var(--border);
+  font-size: 12.5px;
+  letter-spacing: 1.4px;
+  text-transform: uppercase;
+  color: var(--text-muted);
+  max-width: 560px;
+}

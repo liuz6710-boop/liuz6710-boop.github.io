@@ -4,7 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>CFS Digital Platform — Liu Xinyao</title>
-  <meta name="description" content="Technical Product Ownership of PSA's Container Freight Station digital platform: WMS + planning portal, REST API integrations, B2B customer onboarding." />
+  <meta name="description" content="Technical Product Ownership of an enterprise Container Freight Station platform: warehouse operations and planning, API and EDI integration, B2B customer onboarding." />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700;900&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
@@ -53,7 +53,7 @@
       <p class="project-num">01 · CASE STUDY</p>
       <h1 class="project-title">CFS Digital Transformation</h1>
       <p class="project-lead">
-        A B2B logistics platform — WMS + planning portal — for one of the
+        A B2B logistics platform — warehouse operations and planning — for one of the
         world's largest container freight stations. Serving Import,
         Transshipment, and Export flows.
       </p>
@@ -67,7 +67,7 @@
         <span class="tag">Product Ownership</span>
         <span class="tag">REST / JSON APIs</span>
         <span class="tag">EDI / XML</span>
-        <span class="tag">WMS</span>
+        <span class="tag">Warehouse Operations</span>
         <span class="tag">B2B Onboarding</span>
         <span class="tag">Vendor Coordination</span>
         <span class="tag">SQL Analytics</span>
@@ -110,7 +110,7 @@
         We needed a single B2B platform that could track every container
         through Import, Transshipment, and Export flows; plan loading
         operations; handle billing across customer types; and speak natively
-        with the rest of the port — Portnet, WMS, Chemflo — and with each
+        with the rest of the port ecosystem — community, warehouse management and downstream logistics systems — and with each
         customer's own IT stack.
       </p>
     </section>
@@ -206,8 +206,8 @@
         <li><strong>8 enterprise clients delivered</strong>, 4 of them needing custom integrations — discovery, UAT and go-live run end to end, then training so the teams actually used the system.</li>
         <li><strong>One reusable billing framework</strong> replacing per-client pricing logic — <strong>~3 staff-hours/day per client</strong> of manual invoice preparation removed and <strong>billing errors down ~20%</strong>.</li>
         <li><strong>A core data model that holds up</strong> — tracking inventory below the customer-order level so partial processing and returns stay accurate in both stock and charges.</li>
-        <li><strong>A silent data bug caught before anyone noticed</strong> — traced a cross-system sync failure orphaning ~100 records to a non-atomic delete-then-create API pattern, then designed the compensating rollback that stopped it recurring.</li>
-        <li><strong>Smart picking algorithm</strong> for pharmaceutical clients across Singapore medical centers — <strong>70% picking efficiency improvement</strong>. <a href="smart-picking.html" class="inline-link">See case study →</a></li>
+        <li><strong>A silent data bug caught before anyone noticed</strong> — diagnosed a cross-system consistency failure and designed the compensating rollback mechanism that prevented recurrence.</li>
+        <li><strong>Smart picking algorithm</strong> for pharmaceutical logistics clients — <strong>70% picking efficiency improvement</strong>. <a href="smart-picking.html" class="inline-link">See case study →</a></li>
         <li><strong>S$1.5M+ projected 5-year revenue</strong> — sized from merchant behaviour analysis and presented to leadership, which won the initiative its slot against competing projects.</li>
         <li><strong>KPI dashboards</strong> for platform adoption, transaction volume, and operational throughput — bottlenecks that used to surface in post-mortems now surface in the backlog.</li>
       </ul>
@@ -227,9 +227,8 @@
         <li>Power BI</li>
         <li>Figma</li>
         <li>Jira / Confluence</li>
-        <li>Portnet</li>
-        <li>Chemflo</li>
-        <li>WMS</li>
+        <li>Port community systems</li>
+        <li>Warehouse management</li>
       </ul>
     </section>
 
